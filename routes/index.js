@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Request Header Parser Microservice' });
 });
 
-
 router.get('/whoami', function(req, res){
     var ip = req.ip;
     var lang = accepts(req).language();
